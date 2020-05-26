@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.merchantapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+        <activity android:name=".ScanCodeActivity"></activity>
+        <activity android:name=".AmountForBQR" />
+        <activity android:name=".SaleWithCashTransactionResponse" />
+        <activity android:name=".SaleWithCashTransaction" />
+        <activity android:name=".SaleWithCashCashAmount" />
+        <activity android:name=".SaleWithCashAmount" />
+        <activity android:name=".PreAuthCompletionResponse" />
+        <activity android:name=".PreAuthCompletionAmount" />
+        <activity android:name=".InvoiceNumberPreAuthC" />
+        <activity android:name=".PreAuthResponse" />
+        <activity android:name=".PreAuthActivity" />
+        <activity android:name=".AmountForPreAuth" />
+        <activity android:name=".VoidDeclineResponse" />
+        <activity android:name=".VoidResponse" />
+        <activity android:name=".InvoiceNumber" />
+        <activity android:name=".History" />
+        <activity android:name=".SaleActivity" />
+        <activity android:name=".TransactionCount" />
+        <activity android:name=".ResponseSuccessActivity" />
+        <activity android:name=".ResponseActivity" />
+        <activity android:name=".Amount" />
+        <activity android:name=".LastTransaction" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>

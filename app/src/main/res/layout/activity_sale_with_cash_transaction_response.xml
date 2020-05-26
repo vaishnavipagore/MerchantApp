@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E5E8E8"
+    tools:context=".MainActivity">
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="20sp"-->
+    <!--        android:background="@color/colorAccent">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="30sp"-->
+    <!--            android:layout_marginTop="10sp"-->
+    <!--            android:layout_marginBottom="10sp"-->
+    <!--            android:src="@drawable/paynextlogo" />-->
+
+
+    <!--    </RelativeLayout>-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view32"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="15sp"
+        android:layout_marginRight="20sp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:id="@+id/txtStatus8"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0EAE43"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+
+                android:text="Transaction Successful"/>
+
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:id="@+id/txtStatus9"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F54019"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Transaction Unsuccessful"/>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view33"
+        android:layout_gravity="center"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:paddingBottom="50sp"
+        android:layout_marginBottom="15dp"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:src="@drawable/paynextlogo" />
+            <View
+
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#D5D8DC"/>
+            <TextView
+                android:paddingTop="5sp"
+                android:layout_marginBottom="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:text="Sale With Cash"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:text="Head Office :06/A wing,Ground Floor,Western Edge II, Western Express Highway, Borivali (East) ,Mumbai - 400066"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+
+            <TextView
+
+                android:id="@+id/midsalewithcashresponse"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:text="Merchant ID: "
+                />
+
+
+            <TextView
+
+                android:id="@+id/terminalidsalewithcashresponse"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:text="Terminal ID:  "
+                />
+
+            <View
+                android:layout_marginTop="10sp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#D5D8DC"/>
+            <TextView
+                android:id="@+id/TransactionAmountsalewithcashresponse"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Amount: ₹ "
+
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/retrievalsalewithcashresponse"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="RRN: "
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/processingcodesalewithcashresponse"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="RRN: "
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/authIdRspsalewithcashresponse"
+                android:layout_marginTop="5dp"
+                android:text="Auth Id Rsp:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/datesalewithcashresponse"
+                android:layout_marginTop="5dp"
+                android:text="Date:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/timesalewithcashresponse"
+                android:layout_marginTop="5dp"
+                android:text="Time:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+
+
+
+
+
+            <TextView
+
+                android:id="@+id/stansalewithcashresponse"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="STAN:  "
+                />
+
+            <TextView
+
+                android:id="@+id/CardNumbersalewithcashresponse"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="Card Number:  "
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:id="@+id/donesalewithcashresponse"
+
+            android:text="Done"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:background="@drawable/paybutton"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="10sp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/TextViewBottomVersion5"
+        android:text="Sale With Cash Transaction"
+        android:textSize="15sp"
+        android:paddingBottom="5sp"
+        android:textColor="@color/year"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center">
+
+    </TextView>
+
+
+</LinearLayout>

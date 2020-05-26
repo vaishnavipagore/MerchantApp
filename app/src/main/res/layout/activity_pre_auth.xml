@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap to do PreAuth Tran."
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        >
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="4dp"
+
+        >
+
+        <LinearLayout
+            android:background="@color/darkblue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:id="@+id/AID1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#000"/>
+
+
+
+            <TextView
+
+                android:id="@+id/cardnumber1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+
+                />
+            <TextView
+
+                android:id="@+id/exp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+
+                />
+            <TextView
+
+                android:id="@+id/cardtype1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--<Button-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:id="@+id/btn"-->
+    <!--    android:text="Tap"/>-->
+    <ImageView
+        android:id="@+id/activity_read_paycard_image"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:src="@drawable/nfc1" />
+
+    <TextView
+        android:id="@+id/mytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Tap Your Card At the Back"
+        />
+
+
+    <TextView
+        android:id="@+id/response1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <Button
+
+            android:id="@+id/pay1"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/paybutton"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10sp"
+            />
+    </RelativeLayout>
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="80sp"-->
+    <!--            android:layout_height="80sp"-->
+    <!--            android:gravity="left|center_vertical"-->
+    <!--            android:src="@drawable/visa"/>-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="80sp"-->
+    <!--            android:layout_height="80sp"-->
+    <!--            android:gravity="center|center_vertical"-->
+    <!--            android:src="@drawable/ms" />-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="80sp"-->
+    <!--            android:layout_height="80sp"-->
+    <!--            android:gravity="right|center_vertical"-->
+    <!--            android:src="@drawable/rupay" />-->
+
+
+    <!--    </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+</LinearLayout>

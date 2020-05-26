@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#E5E8E8"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:src="@drawable/paynextlogo" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:textColor="@color/darkblue"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Transaction"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        >
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardtype"
+                android:textColor="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:background="@color/darkblue"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/amount"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:textSize="28dp"
+                android:text="₹ "
+                android:textStyle="bold"
+                android:background="@color/darkblue"
+                />
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#D5D8DC"/>
+
+            <TextView
+                android:id="@+id/authcode"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Auth Code:          "
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/batchno"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:text="Batch No:            "
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/card"
+                android:layout_marginTop="5dp"
+                android:text="Card Type:          "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+            <TextView
+                android:text="MID:                     "
+                android:id="@+id/mid"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+
+                />
+
+
+            <TextView
+
+                android:id="@+id/pan"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="Pan:                     "
+                />
+
+            <TextView
+
+                android:id="@+id/product"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="Product Type:    "
+                />
+
+            <TextView
+
+                android:id="@+id/rrn"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="RRN:                    "
+                />
+
+            <TextView
+
+                android:id="@+id/tid"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="TID:                      "
+                />
+
+            <TextView
+
+                android:id="@+id/transaction"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="Transaction ID:  "
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <ScrollView android:layout_marginTop="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_one_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <View
+            android:id="@+id/v_one_login"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/pay"
+
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_two_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="PayNext Pvt Ltd"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10sp"
+                />
+            <Button
+                android:id="@+id/logout"
+                android:layout_marginTop="2sp"
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_alignParentRight="true"
+                android:text="Logout"
+                android:textSize="10sp"
+                android:textAllCaps="false"
+                android:layout_marginRight="7sp"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/logout"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_two_login"
+            android:layout_marginTop="15sp">
+
+            <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lasttran"
+                android:textSize="14sp"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="Recent Transaction">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_one_login"
+            android:layout_below="@+id/mytext"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:layout_margin="15dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            card_view:cardElevation="10dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cardtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/darkblue"
+                android:gravity="center"
+                android:paddingTop="5sp"
+                android:text="Cardtype"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/transactiontype"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginRight="10sp"
+
+                android:paddingLeft="25sp"
+                android:paddingTop="29sp"
+                android:text="trantype"
+                android:textColor="@color/darkblue"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/lasttranamount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="17sp"
+                android:layout_marginRight="10sp"
+                android:gravity="center"
+                android:paddingLeft="25sp"
+                android:paddingTop="5sp"
+                android:text="amount"
+                android:textColor="@color/darkblue"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="17sp"
+
+                android:layout_marginRight="15sp"
+                android:paddingLeft="25sp"
+                android:paddingTop="5sp"
+                android:text="date"
+                android:textColor="@color/darkblue"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="29sp"
+                android:layout_marginRight="15sp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/success"
+
+                />
+
+            <Button
+                android:id="@+id/reject"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="20sp"
+
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="15sp"
+                android:adjustViewBounds="true"
+                android:background="#E74C3C"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:text="declined"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="20sp"
+
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="15sp"
+                android:adjustViewBounds="true"
+                android:background="#2ECC71"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:text="approved"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp"
+
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/TransactionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/cv_one_login"
+
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transactions"
+                android:layout_marginLeft="25sp"
+                android:layout_gravity="left"
+                android:textColor="@color/darkblue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5sp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <GridLayout
+            android:layout_below="@+id/TransactionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:id="@+id/grid"
+            >
+
+
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_marginTop="10sp"
+
+                    android:textColor="@color/title"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/app_sale"
+
+                    android:textAllCaps="false"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/darkblue"
+                    android:text="Sale"
+                    >
+
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal">
+
+                <Button
+                    android:id="@+id/btn10"
+                    android:layout_marginTop="10sp"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/title"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/app_refund"
+
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/darkblue"
+                    android:text="Sale with Cash">
+
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+<!--        Start of Third-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal">
+
+                <Button
+                    android:id="@+id/btn11"
+                    android:layout_marginTop="10sp"
+                    android:textAllCaps="false"
+
+                    android:textColor="@color/title"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/app_auth"
+
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkblue"
+                    android:layout_gravity="center"
+                    android:text="Pre Auth">
+
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+<!--            End of Third-->
+
+
+
+<!--            Start of 4th-->
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal">
+
+                <Button
+                    android:id="@+id/btnBharatQr"
+                    android:layout_marginTop="10sp"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/title"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/scanner"
+
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkblue"
+                    android:text="Bharat QR">
+
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+<!--          End of 4th  -->
+
+
+<!--            Start of 5th-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal">
+
+                <Button
+                    android:id="@+id/btn13"
+                    android:layout_marginTop="10sp"
+
+                    android:textColor="@color/title"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/app_void"
+
+                    android:textAllCaps="false"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/darkblue"
+                    android:text="Void"
+                    >
+
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+<!--            End of 5th-->
+
+
+<!--            Start of 6th-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal">
+
+                <Button
+                    android:id="@+id/btn14"
+                    android:layout_marginTop="10sp"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/title"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/auth"
+
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/darkblue"
+                    android:text="Pre Auth C">
+
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <!--            end of 6th-->
+
+
+
+<!--            start of 7th-->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal">
+
+                <Button
+                    android:id="@+id/btn15"
+                    android:layout_marginTop="10sp"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/title"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/app_sale"
+
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/darkblue"
+                    android:text="Cash@Pos">
+
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <!--        End of 7th-->
+        </GridLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/TicketsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/grid"
+
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tickets"
+                android:layout_marginLeft="25sp"
+                android:layout_gravity="left"
+                android:textColor="@color/darkblue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5sp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+        <GridLayout
+            android:layout_below="@+id/TicketsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+
+            >
+
+
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_margin="5sp"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_gravity="fill_horizontal"
+            >
+
+            <Button
+                android:id="@+id/tickets"
+                android:layout_marginTop="10sp"
+
+                android:textColor="@color/title"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/transquery_by_trace"
+
+                android:textAllCaps="false"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textColor="@color/darkblue"
+                android:text="Tickets"
+                >
+
+
+
+            </TextView>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_gravity="fill_horizontal"
+                >
+            </LinearLayout>
+
+
+        </GridLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

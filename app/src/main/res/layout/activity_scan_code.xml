@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanCodeActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:src="@drawable/paynextlogo" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:id="@+id/qrcode"
+        />
+
+<TextView
+    android:gravity="center"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="10sp"
+    android:layout_marginTop="10sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/amountbqr1"/>
+
+    <TextView
+        android:layout_below="@id/qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_marginTop="20sp"
+        android:id="@+id/generatedQR"
+        android:text="Generated QR..!!!"/>
+
+    <TextView
+        android:layout_marginTop="30sp"
+        android:id="@+id/warntext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backbutton"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:drawableLeft="@drawable/info"
+        android:layout_below="@+id/generatedQR"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Scan this QR using the Customer App for Payment"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warntext"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        >
+
+
+        <TextView
+
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/merchantname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Merchant Name:"
+            android:textColor="#000000"
+            />
+
+        <TextView
+
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/merchantamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Merchant Amount:"
+            android:textColor="#000000"
+            android:layout_marginBottom="10sp"
+            />
+
+        <TextView
+
+            android:layout_marginTop="50sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/merchantTranNr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction No:"
+            android:textColor="#000000"
+            android:layout_marginBottom="10sp"
+            />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/donebqresponse"
+
+            android:text="Done"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:background="@drawable/paybutton"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="10sp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

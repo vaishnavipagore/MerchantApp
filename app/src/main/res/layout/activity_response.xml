@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E5E8E8"
+    tools:context=".MainActivity">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="15sp"
+        android:layout_marginRight="20sp"
+       >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:background="#F54019">
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:id="@+id/txtStatus"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Transaction Unsuccessful"/>
+<!--                android:drawableBottom="@drawable/remove"-->
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:paddingBottom="50sp"
+        android:layout_marginBottom="15dp"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+
+
+            >
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/txtStatus"-->
+            <!--                android:textSize="20dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:drawableLeft="@drawable/error"-->
+            <!--                android:drawablePadding="15dp"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:text="Transaction Unsuccessful"/>-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:src="@drawable/paynextlogo" />
+            <View
+
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#D5D8DC"/>
+            <TextView
+                android:paddingTop="5sp"
+                android:layout_marginBottom="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:text="Sale"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <!--                <View-->
+            <!--                    android:layout_marginTop="10sp"-->
+            <!--                    android:layout_height="1dp"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:background="#D5D8DC"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:text="Head Office :06/A wing,Ground Floor,Western Edge II, Western Express Highway, Borivali (East) ,Mumbai - 400066"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+
+            <TextView
+
+                android:id="@+id/mid"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:text="Merchant ID: "
+                />
+
+
+            <TextView
+
+                android:id="@+id/terminalid"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:text="Terminal ID:  "
+                />
+
+            <View
+                android:layout_marginTop="10sp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#D5D8DC"/>
+            <TextView
+                android:id="@+id/TransactionAmount"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Amount: ₹ "
+
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/retrieval"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="RRN: "
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/authIdRsp"
+                android:layout_marginTop="5dp"
+                android:text="Auth Id Rsp:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_marginTop="5dp"
+                android:text="Date:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_marginTop="5dp"
+                android:text="Time:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+
+
+
+
+
+            <TextView
+
+                android:id="@+id/stan"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="STAN:  "
+                />
+
+            <TextView
+
+                android:id="@+id/CardNumber"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:text="Card Number:  "
+                />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/binowner"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:text="BinOwner:  "-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textColor="@android:color/black"-->
+            <!--                android:textSize="15sp"-->
+
+            <!--                android:layout_marginLeft="20dp"-->
+
+
+            <!--                />-->
+            <!--            <TextView-->
+            <!--                android:text="Date: "-->
+            <!--                android:id="@+id/date"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textColor="@android:color/black"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+
+            <!--                />-->
+
+
+            <!--            <TextView-->
+
+            <!--                android:id="@+id/pan"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textColor="@android:color/black"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:text="Pan:  "-->
+            <!--                />-->
+
+            <!--            <TextView-->
+
+            <!--                android:id="@+id/rrn"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textColor="@android:color/black"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:text="RRN: "-->
+            <!--                />-->
+
+            <!--            <TextView-->
+
+            <!--                android:id="@+id/stan"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textColor="@android:color/black"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:text="STAN:  "-->
+            <!--                />-->
+
+            <!--            <TextView-->
+
+            <!--                android:id="@+id/tid"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textColor="@android:color/black"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:text="TID:  "-->
+            <!--                />-->
+
+            <!--            <TextView-->
+
+            <!--                android:id="@+id/time"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textColor="@android:color/black"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:text="Time:  "-->
+            <!--                />-->
+
+            <!--            <TextView-->
+
+            <!--                android:id="@+id/transaction"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textColor="@android:color/black"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:text="Transaction ID:  "-->
+            <!--                />-->
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn"-->
+
+    <!--        android:text="Back"-->
+    <!--        android:textColor="#FFFFFF"-->
+    <!--        android:textSize="15sp"-->
+
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="28dp"-->
+    <!--        android:background="@drawable/button"-->
+    <!--        android:shadowColor="#A8A8A8"-->
+    <!--        android:shadowDx="0"-->
+    <!--        android:shadowDy="0"-->
+    <!--        android:shadowRadius="5"-->
+    <!--        />-->
+    <!--    <Button-->
+    <!--        android:id="@+id/button_parse"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginBottom="29dp"-->
+    <!--        android:text="Get" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:id="@+id/done"
+
+            android:text="Done"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:background="@drawable/paybutton"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="10sp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

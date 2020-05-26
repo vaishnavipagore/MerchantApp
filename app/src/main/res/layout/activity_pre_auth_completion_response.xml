@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E5E8E8"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_viewpreauthc"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="15sp"
+        android:layout_marginRight="20sp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:id="@+id/txtStatus6"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0EAE43"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+
+                android:text="Transaction Successful"/>
+
+
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="20sp"
+                android:id="@+id/txtStatus7"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F54019"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Transaction Unsuccessful"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_viewpreauth2"
+        android:layout_gravity="center"
+        android:layout_width="270sp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:paddingBottom="50sp"
+        android:layout_marginBottom="15dp"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+
+
+            >
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:src="@drawable/paynextlogo" />
+            <View
+
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#D5D8DC"/>
+            <TextView
+                android:paddingTop="5sp"
+                android:layout_marginBottom="6sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:text="Pre Auth Completion"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <!--                <View-->
+            <!--                    android:layout_marginTop="10sp"-->
+            <!--                    android:layout_height="1dp"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:background="#D5D8DC"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:paddingLeft="5sp"
+                    android:paddingRight="5sp"
+                    android:text="Head Office :06/A wing,Ground Floor,Western Edge II, Western Express Highway, Borivali (East) ,Mumbai - 400066"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+
+            <TextView
+
+                android:id="@+id/midpreauthc"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:text="Merchant ID: "
+                />
+
+
+            <TextView
+
+                android:id="@+id/terminalidpreauthc"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:text="Terminal ID:  "
+                />
+
+
+
+            <View
+                android:layout_marginTop="10sp"
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="#D5D8DC"/>
+
+            <TextView
+                android:id="@+id/amounttranspreauthc"
+                android:layout_marginTop="5dp"
+                android:text="Amount:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:id="@+id/transactiondescriptionpreauthc"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Tran Des: "
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/panpreauthc"
+                android:layout_marginTop="5dp"
+                android:text="PAN:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/rrnpreauthc"
+                android:layout_marginTop="5dp"
+                android:text="RRN:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/authidresppreauthc"
+                android:layout_marginTop="5dp"
+                android:text="RRN:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/trannrpreauthc"
+                android:layout_marginTop="5dp"
+                android:text="TranNr:  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="20dp"
+
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:id="@+id/donepreauthc"
+
+            android:text="Done"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:background="@drawable/paybutton"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="10sp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/TextViewBottomVersion2"
+        android:text="Pre Auth Completion Transaction"
+        android:textSize="15sp"
+        android:paddingBottom="5sp"
+        android:textColor="@color/year"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center">
+
+    </TextView>
+
+
+
+</LinearLayout>
